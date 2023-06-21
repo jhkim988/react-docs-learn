@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { ReferencingRefs, StopWatch, Counter, FIX_A_BROKEN_CHAT_INPUT, FIX_A_COMPONENT_FAILING_TO_RE_RENDER, FIX_DEBOUNCING, READ_THE_LATEST_STATE } from "./escape_hatches/ReferencingValuesWithRefs";
+import { CatFriends, CatFriendsList, FormForwardRef, FormImperativeHandle, TodoList, PLAY_AND_PAUSE_THE_VIDEO, FOCUS_THE_SEARCH_FIELD, SCROLLING_AN_IMAGE_CAROUSEL, FOCUS_THE_SEARCH_FIELD_WITH_SEPARATE_COMPONENTS } from "./escape_hatches/ManipulatingTheDomWithRefs"
+import { VideoPlayerExample, ChatRoom, FIX_FETCHING_INSIDE_AN_EFFECT } from "./escape_hatches/SynchronizingWithEffects"
+import { TRANSFORM_DATA_WITHOUT_EFFECTS, SUBMIT_A_FORM_WITHOUT_EFFECTS } from "./escape_hatches/YouMightNotNeedAnEffect"
+import { CharRoomExample, SWITCH_SYNCHRONIZATION_ON_AND_OFF } from "./escape_hatches/LifecycleOfReactiveEffects";
+
+const App = () => {
+  return <SWITCH_SYNCHRONIZATION_ON_AND_OFF />
 }
 
 export default App;

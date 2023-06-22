@@ -5,9 +5,10 @@ import { CatFriends, CatFriendsList, FormForwardRef, FormImperativeHandle, TodoL
 import { VideoPlayerExample, ChatRoom, FIX_FETCHING_INSIDE_AN_EFFECT } from "./escape_hatches/SynchronizingWithEffects"
 import { TRANSFORM_DATA_WITHOUT_EFFECTS, SUBMIT_A_FORM_WITHOUT_EFFECTS } from "./escape_hatches/YouMightNotNeedAnEffect"
 import { CharRoomExample, SWITCH_SYNCHRONIZATION_ON_AND_OFF } from "./escape_hatches/LifecycleOfReactiveEffects";
+import { StatusBar, EXTRACT_A_USECOUNTER_HOOK, IMPLEMENT_A_STAGGERING_MOVEMENT } from "./escape_hatches/ReusingLogicWithCustomHooks";
 
 const App = () => {
-  return <SWITCH_SYNCHRONIZATION_ON_AND_OFF />
+  return <IMPLEMENT_A_STAGGERING_MOVEMENT />
 }
 
 export default App;

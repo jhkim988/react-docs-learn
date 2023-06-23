@@ -6,9 +6,9 @@ import { VideoPlayerExample, ChatRoom, FIX_FETCHING_INSIDE_AN_EFFECT } from "./e
 import { TRANSFORM_DATA_WITHOUT_EFFECTS, SUBMIT_A_FORM_WITHOUT_EFFECTS } from "./escape_hatches/YouMightNotNeedAnEffect"
 import { CharRoomExample, SWITCH_SYNCHRONIZATION_ON_AND_OFF } from "./escape_hatches/LifecycleOfReactiveEffects";
 import { StatusBar, EXTRACT_A_USECOUNTER_HOOK, IMPLEMENT_A_STAGGERING_MOVEMENT } from "./escape_hatches/ReusingLogicWithCustomHooks";
-
+import { Page } from "./managing_state/PassingDataDeeplyWithContext";
 const App = () => {
-  return <IMPLEMENT_A_STAGGERING_MOVEMENT />
+  return <Page />
 }
 
 export default App;
